@@ -37,6 +37,19 @@
             <version>1.18.6</version>
             <scope>provided</scope> <!--打包时不会包含进去-->
         </dependency>
+
+        <!--MyBatis Plus启动器-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+
+        <!--MySql jdbc驱动-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
 	</dependencies>
 
 	<build>
