@@ -3,19 +3,18 @@ package com.cheng.entity;
 import lombok.Data;
 
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 
 
 /**
- * 用户实体类
+ * 客户实体类
  * Created by niecheng on 2019/6/4.
  */
 @Data
-public class User {
+public class Customer {
     /**
      * 用户id
      */
-    private Long id;
+    private String id;
     /**
      * 用户名称
      */
