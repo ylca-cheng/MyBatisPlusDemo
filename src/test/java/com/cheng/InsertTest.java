@@ -5,13 +5,18 @@ import com.cheng.dao.UserMapper;
 import com.cheng.entity.Customer;
 import com.cheng.entity.User;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.time.LocalDateTime;
 
 /**
  * Created by niecheng on 2019/6/10.
  */
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class InsertTest {
 
     @Autowired
@@ -28,8 +33,9 @@ public class InsertTest {
     public void insertUser() {
         User user = new User();
         user.setAge(31);
-        user.setName("刘明清1");
+        user.setRealName("向东");
         user.setManagerId(1088248166370832385L);
+        user.setEmail("xd@baomidou.com");
         user.setCreateTime(LocalDateTime.now());
         int rows = userMapper.insert(user);
         System.out.println("影响记录数："+rows);
